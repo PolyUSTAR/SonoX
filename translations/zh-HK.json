@@ -1,0 +1,131 @@
+{
+    "nav": {
+        "tagline": "智能超聲分析",
+        "app": "應用",
+        "about": "關於",
+        "paper": "論文"
+    },
+    "hero": {
+        "badge": "AI 賦能",
+        "title_main": "智能超聲圖像分析",
+        "subtitle": "SonoX 利用先進的深度學習技術分析超聲圖像，輔助臨床醫生在多個檢查部位進行精準的病灶檢測、邊界勾畫和良惡性分類。",
+        "institution": "研究機構",
+        "trust_notice": "由香港理工大學應天祥教授課題組開發。僅供研究使用。"
+    },
+    "instructions": {
+        "title": "快速入門",
+        "content_1": "選擇需要分析的檢查部位（如：淋巴結、乳腺、甲狀腺）",
+        "content_2": "上傳超聲圖像或選擇參考樣例",
+        "content_3": "點擊「開始分析」，查看 AI 分割和分類結果"
+    },
+    "metrics": {
+        "datasets": "臨床數據集",
+        "images": "超聲圖像",
+        "regions": "檢查部位",
+        "params": "模型參數"
+    },
+    "workspace": {
+        "badge": "AI 分析",
+        "title": "分析工作台",
+        "subtitle": "選擇檢查部位，上傳或選擇超聲圖像，即可開始 AI 分析"
+    },
+    "datasets": {
+        "lymph-node": "淋巴結",
+        "breast": "乳腺",
+        "thyroid": "甲狀腺",
+        "prostate": "前列腺"
+    },
+    "upload": {
+        "title": "上傳圖像",
+        "subtitle": "拖放或點擊上傳",
+        "drop_title": "拖放圖像到此處",
+        "drop_text": "或點擊瀏覽檔案",
+        "clear": "清除",
+        "analyze": "開始分析"
+    },
+    "samples": {
+        "title": "參考樣本",
+        "subtitle": "點擊任意樣本載入"
+    },
+    "gt": {
+        "title": "標註標準",
+        "subtitle": "專家標註的參考掩膜",
+        "placeholder": "選擇參考樣本查看標註結果"
+    },
+    "results": {
+        "title": "AI 病灶分割",
+        "subtitle": "對比多個 AI 模型的分析結果",
+        "subtitle_full": "對比全部六個模型的分析結果",
+        "full": "完整對比",
+        "legend": "紅色區域代表 AI 預測的病灶",
+        "lesion_area": "病灶面積",
+        "placeholder": "上傳圖像後點擊「開始分析」查看結果",
+        "our_model": "AI 病灶分割",
+        "our_model_sub": "AI 預測的病灶邊界"
+    },
+    "slider": {
+        "original": "原始圖像",
+        "segmentation": "分割結果",
+        "ground_truth": "標註標準"
+    },
+    "models": {
+        "Baseline UNet": "基線（採用 100% 標註數據訓練）",
+        "5% Semi-Supervised": "SonoX（僅採用 5% 標註數據）",
+        "10% Semi-Supervised": "SonoX（僅採用 10% 標註數據）",
+        "20% Semi-Supervised": "SonoX（僅採用 20% 標註數據）",
+        "35% Semi-Supervised": "SonoX（僅採用 35% 標註數據）",
+        "50% Semi-Supervised": "SonoX（僅採用 50% 標註數據）"
+    },
+    "cls": {
+        "title": "AI 病灶分類",
+        "subtitle": "基於分割結果的良惡性概率預測",
+        "placeholder_title": "請先分析圖像",
+        "placeholder_text": "分類在分割完成後自動運行",
+        "segmentation": "分割結果",
+        "original": "原始圖像",
+        "model": "分類模型",
+        "input": "輸入",
+        "output": "輸出",
+        "benign": "良性",
+        "malignant": "惡性",
+        "predicted": "預測結果",
+        "no_lesion_title": "未檢測到病灶",
+        "no_lesion_text": "分類需要病灶區域。AI 模型未在該圖像中檢測到病灶。"
+    },
+    "about": {
+        "title": "關於",
+        "subtitle": "用於病灶分割與良惡性分類的 AI 超聲分析平台",
+        "what_title": "什麼是 SonoX？",
+        "what_1": "集成深度學習模型的 AI 超聲圖像分析平台，支持病灶分割與良惡性分類",
+        "what_2": "輔助臨床醫生精準識別和勾畫病灶邊界",
+        "what_3": "覆蓋淋巴結、乳腺、甲狀腺和前列腺超聲檢查",
+        "seg_title": "分割技術",
+        "seg_1": "基於 UNet 架構，採用半監督學習（Switch 框架）",
+        "seg_2": "僅需 5% 標註數據即可訓練，性能與全監督方法相當",
+        "seg_3": "支持 6 個臨床數據集的多部位超聲分割",
+        "cls_title": "分類技術",
+        "cls_1": "Vision Transformer (ViT) 提取病灶區域的深層視覺特徵",
+        "cls_2": "影像組學神經網路提取手工設計的形態和紋理特徵",
+        "cls_3": "雙分支分類頭融合 ViT 與影像組學特徵進行良惡性預測",
+        "pub_title": "論文發表",
+        "pub_1": "發表於 IEEE 神經網路與學習系統彙刊（TNNLS），2026 年",
+        "pub_2": "在來自多個醫學中心的 6 個臨床數據集上驗證",
+        "pub_3": "在不同患者群體中表現出強大的泛化能力"
+    },
+    "disclaimer": {
+        "title": "重要醫療免責聲明",
+        "text": "SonoX 僅供研究和教學使用，非經認證的醫療診斷工具。所有 AI 生成結果僅供參考，不能替代專業醫療判斷、臨床檢查或既定診斷程序。醫療決策請務必諮詢專業醫療人員。"
+    },
+    "footer": {
+        "lab": "PolyU STAR 實驗室",
+        "paper": "論文發表",
+        "code": "原始碼",
+        "copyright": "© 2026 SonoX · 香港理工大學醫療科技及資訊學系超聲創新與人工智能研究（STAR）實驗室"
+    },
+    "loading": {
+        "text": "AI 分析中..."
+    },
+    "errors": {
+        "no_image": "請先上傳圖像或選擇參考樣本。"
+    }
+}

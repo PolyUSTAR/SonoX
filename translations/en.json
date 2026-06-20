@@ -1,0 +1,131 @@
+{
+    "nav": {
+        "tagline": "Intelligent Ultrasound Analysis",
+        "app": "App",
+        "about": "About",
+        "paper": "Paper"
+    },
+    "hero": {
+        "badge": "AI-Empowered",
+        "title_main": "Intelligent Ultrasound Image Analysis",
+        "subtitle": "SonoX leverages advanced deep learning to analyze ultrasound images, assisting clinicians in accurate lesion detection, boundary delineation, and malignancy classification across multiple body regions.",
+        "institution": "Research Institution",
+        "trust_notice": "Developed by Prof. Michael Ying's research group at The Hong Kong Polytechnic University. For research purposes only."
+    },
+    "instructions": {
+        "title": "Quick Start Guide",
+        "content_1": "Select a body region to analyze (e.g., Lymph Node, Breast, Thyroid)",
+        "content_2": "Upload your ultrasound image or select from reference samples",
+        "content_3": "Click \"Start Analysis\" to view AI segmentation and classification results"
+    },
+    "metrics": {
+        "datasets": "Clinical Datasets",
+        "images": "Ultrasound Images",
+        "regions": "Body Regions",
+        "params": "Model Parameters"
+    },
+    "workspace": {
+        "badge": "AI Analysis",
+        "title": "Analysis Workspace",
+        "subtitle": "Select a body region, then upload or choose an ultrasound image to begin AI-empowered analysis"
+    },
+    "datasets": {
+        "lymph-node": "Lymph Node",
+        "breast": "Breast",
+        "thyroid": "Thyroid",
+        "prostate": "Prostate"
+    },
+    "upload": {
+        "title": "Upload Image",
+        "subtitle": "Drag and drop or click to upload",
+        "drop_title": "Drop your image here",
+        "drop_text": "or click to browse files",
+        "clear": "Clear",
+        "analyze": "Start Analysis"
+    },
+    "samples": {
+        "title": "Reference Samples",
+        "subtitle": "Click any sample to load it"
+    },
+    "gt": {
+        "title": "Ground Truth",
+        "subtitle": "Expert-annotated reference mask",
+        "placeholder": "Select a reference sample to view ground truth"
+    },
+    "results": {
+        "title": "AI Lesion Segmentation",
+        "subtitle": "Compare results from multiple AI models",
+        "subtitle_full": "Compare results from all six models",
+        "full": "Full Comparison",
+        "legend": "Red areas indicate AI-predicted lesion",
+        "lesion_area": "Lesion Area",
+        "placeholder": "Upload an image and click Start Analysis",
+        "our_model": "AI Lesion Segmentation",
+        "our_model_sub": "AI-predicted lesion boundary"
+    },
+    "slider": {
+        "original": "Original",
+        "segmentation": "Segmentation",
+        "ground_truth": "Ground Truth"
+    },
+    "models": {
+        "Baseline UNet": "Baseline (trained with 100% labeled data)",
+        "5% Semi-Supervised": "SonoX (trained with 5% labeled data)",
+        "10% Semi-Supervised": "SonoX (trained with 10% labeled data)",
+        "20% Semi-Supervised": "SonoX (trained with 20% labeled data)",
+        "35% Semi-Supervised": "SonoX (trained with 35% labeled data)",
+        "50% Semi-Supervised": "SonoX (trained with 50% labeled data)"
+    },
+    "cls": {
+        "title": "AI Lesion Classification",
+        "subtitle": "Benign vs. malignant probability prediction based on segmentation",
+        "placeholder_title": "Run analysis first",
+        "placeholder_text": "Classification results will appear after segmentation",
+        "segmentation": "Segmentation Result",
+        "original": "Original Image",
+        "model": "Classification Model",
+        "input": "Input",
+        "output": "Output",
+        "benign": "Benign",
+        "malignant": "Malignant",
+        "predicted": "Prediction",
+        "no_lesion_title": "No Lesion Detected",
+        "no_lesion_text": "Classification requires a lesion. The AI model did not detect any lesion in this image."
+    },
+    "about": {
+        "title": "About",
+        "subtitle": "An AI-empowered ultrasound analysis platform for lesion segmentation and malignancy classification",
+        "what_title": "What is SonoX?",
+        "what_1": "An AI-empowered platform integrating deep learning models for ultrasound lesion segmentation and malignancy classification",
+        "what_2": "Assists clinicians in identifying and delineating lesion boundaries with high precision",
+        "what_3": "Covers lymph nodes, breast, thyroid, and prostate ultrasound imaging",
+        "seg_title": "Segmentation",
+        "seg_1": "Based on UNet architecture with semi-supervised learning (Switch framework)",
+        "seg_2": "Trained with as little as 5% labeled data while maintaining competitive performance",
+        "seg_3": "Supports multi-region ultrasound segmentation across 6 clinical datasets",
+        "cls_title": "Classification",
+        "cls_1": "Vision Transformer (ViT) extracts deep visual features from lesion regions",
+        "cls_2": "Radiomics neural network captures handcrafted morphological and texture features",
+        "cls_3": "Dual-branch classification head fuses ViT and radiomics features for benign vs. malignant prediction",
+        "pub_title": "Publication",
+        "pub_1": "Published in IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2026",
+        "pub_2": "Validated on 6 clinical datasets from multiple medical centers",
+        "pub_3": "Demonstrates strong generalization across diverse patient populations"
+    },
+    "disclaimer": {
+        "title": "Important Medical Disclaimer",
+        "text": "SonoX is designed for research and educational purposes only. It is not a certified medical diagnostic tool. All AI-generated results are for reference only and must not replace professional medical judgment, clinical examination, or established diagnostic procedures. Always consult qualified healthcare professionals for medical decisions."
+    },
+    "footer": {
+        "lab": "PolyU STAR Lab",
+        "paper": "Published Paper",
+        "code": "Source Code",
+        "copyright": "© 2026 SonoX · ultraSound innovaTion & AI Research (STAR) Lab, Department of Health Technology and Informatics, The Hong Kong Polytechnic University"
+    },
+    "loading": {
+        "text": "Analyzing with AI..."
+    },
+    "errors": {
+        "no_image": "Please upload an image or select a reference sample first."
+    }
+}
