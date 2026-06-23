@@ -21,10 +21,12 @@ if [[ "${GITHUB_ACTIONS:-}" == "true" && -n "${api_base_url}" && ! "${api_base_u
     exit 1
 fi
 
+cache_buster="${GITHUB_SHA:-${GITHUB_RUN_ID:-pages}}"
+
 rm -rf "${out_dir}"
 mkdir -p "${out_dir}"
 
-cp frontend/index.html "${out_dir}/index.html"
+sed "s|src=\"\\./config.js\"|src=\"./config.js?v=${cache_buster}\"|" frontend/index.html > "${out_dir}/index.html"
 cp frontend/app.js "${out_dir}/app.js"
 cp frontend/styles.css "${out_dir}/styles.css"
 cp frontend/favicon.ico "${out_dir}/favicon.ico"
